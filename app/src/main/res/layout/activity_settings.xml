@@ -22,19 +22,20 @@
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/schedule"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_margin="8dp"
                     android:layout_gravity="center"
-                    android:gravity="center">
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -44,25 +45,26 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Schedule"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        android:text="Schedule" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_gravity="center"
+                    android:layout_margin="8dp"
                     android:gravity="center"
-                    android:layout_margin="8dp">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -72,8 +74,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Password"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        android:text="Password" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -85,19 +87,20 @@
             android:gravity="center">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/account"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_margin="8dp"
                     android:layout_gravity="center"
-                    android:gravity="center">
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -107,25 +110,26 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Account"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        android:text="Account" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/logout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
-                app:cardCornerRadius="10dp"
-                android:layout_margin="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_gravity="center"
+                    android:layout_margin="8dp"
                     android:gravity="center"
-                    android:layout_margin="8dp">
+                    android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -135,8 +139,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Logout"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp"
+                        android:text="Logout" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
