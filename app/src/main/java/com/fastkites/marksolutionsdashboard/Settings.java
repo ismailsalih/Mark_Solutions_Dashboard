@@ -21,6 +21,27 @@ public class Settings extends AppCompatActivity {
         account = findViewById(R.id.account);
         logout = findViewById(R.id.logout);
 
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Schedule.class));
+            }
+        });
+
+        password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Password.class).putExtra("FROM_SETTINGS", true));
+            }
+        });
+
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Account.class));
+            }
+        });
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,5 +49,6 @@ public class Settings extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }

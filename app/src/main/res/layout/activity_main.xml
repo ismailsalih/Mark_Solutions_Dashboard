@@ -80,6 +80,7 @@
             android:orientation="vertical">
 
             <com.google.android.material.chip.ChipGroup
+                android:id="@+id/choiceChipGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -87,32 +88,40 @@
                     android:id="@+id/todayChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checkable="false"
-                    android:text="Today"
+                    app:checkedIconVisible="false"
+                    android:checkable="true"
                     android:fontFamily="@font/inter_medium"
+                    android:text="Today"
+                    android:checked="true"
                     android:textColor="@color/white"
-                    app:chipBackgroundColor="@color/secondary_red"
-                    app:chipStrokeColor="@color/white_shade"
+                    app:chipBackgroundColor="@color/chip_state_list"
+                    app:chipStrokeColor="@color/chip_stroke_state_list"
                     app:chipStrokeWidth="1dp" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/weekChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7 Days"
+                    app:checkedIconVisible="false"
+                    android:checkable="true"
                     android:fontFamily="@font/inter_medium"
+                    android:text="7 Days"
                     android:textColor="@color/white"
-                    app:chipStrokeColor="@color/secondary_red"
+                    app:chipBackgroundColor="@color/chip_state_list"
+                    app:chipStrokeColor="@color/chip_stroke_state_list"
                     app:chipStrokeWidth="1dp" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/monthChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="This Month"
+                    app:checkedIconVisible="false"
+                    android:checkable="true"
                     android:fontFamily="@font/inter_medium"
+                    android:text="This Month"
                     android:textColor="@color/white"
-                    app:chipStrokeColor="@color/secondary_red"
+                    app:chipBackgroundColor="@color/chip_state_list"
+                    app:chipStrokeColor="@color/chip_stroke_state_list"
                     app:chipStrokeWidth="1dp" />
             </com.google.android.material.chip.ChipGroup>
 
@@ -149,7 +158,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_extrabold"
+                                android:fontFamily="@font/inter_bold"
                                 android:text="Today Sale"
                                 android:textSize="14sp" />
 
@@ -188,7 +197,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_extrabold"
+                                android:fontFamily="@font/inter_bold"
                                 android:text="Stock Value"
                                 android:textSize="14sp" />
 
@@ -227,7 +236,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_extrabold"
+                                android:fontFamily="@font/inter_bold"
                                 android:text="Day Book Balance"
                                 android:textSize="14sp" />
 
@@ -266,7 +275,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_extrabold"
+                                android:fontFamily="@font/inter_bold"
                                 android:text="Payables"
                                 android:textSize="14sp" />
 
@@ -305,7 +314,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/inter_extrabold"
+                                android:fontFamily="@font/inter_bold"
                                 android:text="Petty Cash"
                                 android:textSize="14sp" />
 
@@ -321,6 +330,35 @@
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/white_shade"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top Brands"
+                        android:fontFamily="@font/inter_extrabold"
+                        android:textSize="18sp"/>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/topBrandPieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -344,16 +382,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="@font/inter_semibold"
                         android:text="LKR33,481"
-                        android:layout_marginTop="8dp"
                         android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
                         android:text="38,489.00 Within 10 days" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -380,16 +418,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="@font/inter_semibold"
                         android:text="LKR33,481"
-                        android:layout_marginTop="8dp"
                         android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
                         android:text="38,489.00 has to deposit" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -416,16 +454,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="@font/inter_semibold"
                         android:text="LKR33,481"
-                        android:layout_marginTop="8dp"
                         android:textSize="20dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
                         android:text="38,489.00 has to collect" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -433,9 +471,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 app:cardBackgroundColor="@color/white_shade"
-                app:cardCornerRadius="10dp"
-                android:layout_marginTop="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -445,17 +483,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_bold"
-                        android:text="Upcoming Cheques"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginStart="8dp" />
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Upcoming Cheques" />
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/upcomingChequesRecView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        tools:listitem="@layout/cheques_list_layout"
-                        tools:itemCount="3"/>
+                        android:layout_marginTop="8dp" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -463,9 +500,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 app:cardBackgroundColor="@color/white_shade"
-                app:cardCornerRadius="10dp"
-                android:layout_marginTop="8dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -475,19 +512,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_bold"
-                        android:text="Inward Cheques"
+                        android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginStart="8dp" />
+                        android:fontFamily="@font/inter_bold"
+                        android:text="Inward Cheques" />
 
                     <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/inwardChequesRecView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"/>
+                        android:layout_marginTop="8dp" />
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

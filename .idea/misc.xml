@@ -5,12 +5,14 @@
       <map>
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/drawable/edit_text_round.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/drawable/ic_outline_circle.xml" value="0.1" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/drawable/red_indicator.xml" value="0.2203125" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/activity_password.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/activity_password.xml" value="0.2" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/activity_settings.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/cheques_list_layout.xml" value="0.4732272069464544" />
+        <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/layout/item_keyboard_key.xml" value="0.33" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
         <entry key="..\:/Users/Intel/AndroidStudioProjects/MarkSolutionsDashboard/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
       </map>

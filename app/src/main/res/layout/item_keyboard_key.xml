@@ -1,0 +1,8 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:gravity="center"
+    android:fontFamily="@font/inter_extrabold"
+    android:textColor="@color/white"
+    android:background="@drawable/ic_outline_circle"
+    android:textSize="24sp" />
